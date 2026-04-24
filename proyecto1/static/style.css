@@ -1,0 +1,284 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    text-align: center;
+}
+
+/* NAV */
+nav {
+    padding: 20px;
+}
+
+.logo-text {
+    color: #ff4d88;
+    font-size: 26px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ff4d88;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    padding: 60px 20px;
+}
+
+/* LOGO */
+.logo {
+    width: 200px;
+}
+
+/* TITULO */
+h1 {
+    font-size: 42px;
+    color: #ff4d88;
+    animation: bounce 2s infinite;
+}
+
+/* ANIMACION TITULO */
+@keyframes bounce {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* BOTON */
+.btn-reservar {
+    display: inline-block;
+    margin-top: 25px;
+    background: linear-gradient(45deg, #ff4d88, #ff85a2);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0px 8px 20px rgba(255,77,136,0.4);
+    transition: 0.3s;
+}
+
+.btn-reservar:hover {
+    transform: scale(1.05);
+}
+
+/* SECCIONES */
+h2 {
+    margin-bottom: 10px;
+}
+
+section p:first-of-type {
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* TEXTO NOSOTROS */
+.texto-nosotros {
+    max-width: 600px;
+    margin: 12px auto;
+    line-height: 1.8;
+    font-size: 16px;
+    color: #444;
+}
+
+/* CARDS (BOTONES) */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 30px;
+    width: 220px;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0px 8px 20px rgba(255,77,136,0.25);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.05);
+    background: linear-gradient(45deg, #ff4d88, #ff85a2);
+    color: white;
+}
+
+/* GALERIA */
+.galeria img {
+    width: 220px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* TESTIMONIOS */
+.testimonio {
+    background: white;
+    margin: 10px auto;
+    padding: 15px;
+    width: 260px;
+    border-radius: 10px;
+}
+
+/* NOTA PRECIOS */
+.nota-precios {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+/* REDES */
+.redes {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 50px 0;
+}
+
+.redes a {
+    font-size: 45px;
+    color: #ff4d88;
+}
+
+/* WHATSAPP */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    animation: pulse 2s infinite;
+}
+
+/* BURBUJAS */
+.burbujas span {
+    position: fixed;
+    bottom: -50px;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 182, 193, 0.5);
+    border-radius: 50%;
+    animation: subir 10s infinite;
+}
+
+.burbujas span:nth-child(1) { left: 20%; }
+.burbujas span:nth-child(2) { left: 40%; }
+.burbujas span:nth-child(3) { left: 60%; }
+.burbujas span:nth-child(4) { left: 80%; }
+
+@keyframes subir {
+    0% { transform: translateY(0); opacity: 0; }
+    50% { opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+/* SCROLL ANIMACION */
+.fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 0.6s;
+}
+
+/* FOOTER */
+footer {
+    margin: 40px 0;
+    color: #888;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+/* TITULOS */
+h1 {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+/* TEXTOS */
+p {
+    font-weight: 300;
+}
+
+/* RESALTAR TEXTO IMPORTANTE */
+strong {
+    color: #ff4d88;
+}
+
+.btn-reservar {
+    animation: latido 2.5s infinite;
+}
+
+@keyframes latido {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .galeria img {
+        width: 90%;
+    }
+}
+
+.galeria img {
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.08) rotate(1deg);
+}

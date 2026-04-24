@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magui Show</title>
+
+    <!-- TIPOGRAFÍA -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- BURBUJAS -->
+<div class="burbujas">
+    <span></span><span></span><span></span><span></span>
+</div>
+
+<!-- NAV -->
+<nav>
+    <h2 class="logo-text">Bienvenidos a tu mejor opción 🐰</h2>
+    <ul class="menu">
+        <li><a href="#inicio">❤️ Inicio</a></li>
+        <li><a href="#nosotros">👨‍👩‍👧 Nosotros</a></li>
+        <li><a href="#servicios">🎈 Servicios</a></li>
+        <li><a href="#precios">💰 Precios</a></li>
+        <li><a href="#galeria">📸 Galería</a></li>
+        <li><a href="#testimonios">💬 Opiniones</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero fade">
+    <h1>🎉 Magui Show 🎉</h1>
+
+    <img src="{{ url_for('static', filename='logo.jpg') }}" class="logo">
+
+    <p><strong>Hacemos que cada fiesta sea inolvidable</strong></p>
+    <p>Shows infantiles en Lima llenos de alegría, juegos y diversión</p>
+
+    <a href="https://wa.me/51903599125?text=Hola%20quiero%20reservar%20un%20show"
+       class="btn-reservar"
+       target="_blank">
+       🎉 Reservar ahora
+    </a>
+</section>
+
+<!-- NOSOTROS -->
+<section id="nosotros" class="fade">
+    <h2>¿Quiénes somos?</h2>
+
+    <p class="texto-nosotros">
+        🎉 En <strong>Magui Show</strong> convertimos cada evento en una experiencia llena de risas, emoción y momentos inolvidables.
+    </p>
+
+    <p class="texto-nosotros">
+        🎈 Somos especialistas en <strong>animación infantil</strong>, creando shows dinámicos con juegos, música y mucha energía.
+    </p>
+
+    <p class="texto-nosotros">
+        ⭐ Nos enfocamos en que los niños se diviertan al máximo y que cada cliente quede feliz con nuestro servicio.
+    </p>
+
+    <p class="texto-nosotros">
+        💖 Si buscas un show confiable, divertido y con excelente atención, somos tu mejor opción.
+    </p>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" class="fade">
+    <h2>Servicios</h2>
+    <p>Elige el tipo de show ideal para tu celebración</p>
+
+    <div class="cards">
+        <div class="card">🎈 Show Infantil</div>
+        <div class="card">🍼 Baby Shower</div>
+        <div class="card">🫧 Show de Burbujas</div>
+    </div>
+</section>
+
+<!-- PRECIOS -->
+<section id="precios" class="fade">
+    <h2>Precios y Paquetes</h2>
+    <p>Opciones pensadas para adaptarnos a tu evento</p>
+
+    <div class="cards">
+        <div class="card">
+            🎉 Básico<br><br>
+            Animación + juegos<br><br>
+            <strong>Desde S/150</strong>
+        </div>
+
+        <div class="card">
+            🎈 Intermedio<br><br>
+            Animación + dinámicas<br><br>
+            <strong>Desde S/250</strong>
+        </div>
+
+        <div class="card">
+            ✨ Premium<br><br>
+            Show completo + extras<br><br>
+            <strong>Desde S/350</strong>
+        </div>
+    </div>
+
+    <p class="nota-precios">
+        ⚠️ Los precios pueden variar según el tipo de evento, duración y requerimientos. 
+        Escríbenos para una cotización personalizada.
+    </p>
+</section>
+
+<!-- BENEFICIOS -->
+<section class="fade">
+    <h2>¿Por qué elegirnos?</h2>
+    <p>Esto es lo que nos diferencia</p>
+
+    <div class="cards">
+        <div class="card">🎉 Animación 100% divertida</div>
+        <div class="card">👶 Especialistas en niños</div>
+        <div class="card">⭐ Clientes felices garantizados</div>
+    </div>
+</section>
+
+<!-- GALERIA -->
+<section id="galeria" class="fade">
+    <h2>Galería</h2>
+    <p>Algunos momentos de nuestros shows</p>
+
+    <div class="galeria">
+        <img src="{{ url_for('static', filename='foto1.jpg') }}">
+        <img src="{{ url_for('static', filename='foto2.jpg') }}">
+    </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section id="testimonios" class="fade">
+    <h2>Opiniones</h2>
+    <p>Lo que dicen nuestros clientes</p>
+
+    <div class="testimonio">⭐⭐⭐⭐⭐<br>"Excelente show, los niños felices"</div>
+    <div class="testimonio">⭐⭐⭐⭐⭐<br>"Muy divertido y profesional"</div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="fade">
+    <h2>¿Listo para reservar tu show? 🎉</h2>
+    <p>Contáctanos y asegura una fecha inolvidable</p>
+
+    <a href="https://wa.me/51903599125?text=Hola%20quiero%20reservar%20un%20show"
+       class="btn-reservar"
+       target="_blank">
+       🎉 Reservar ahora
+    </a>
+</section>
+
+<!-- REDES -->
+<div class="redes">
+    <a href="https://www.instagram.com/magui_show15" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/share/1DscPtr4gC/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.tiktok.com/@magui_show" target="_blank"><i class="fab fa-tiktok"></i></a>
+</div>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/51903599125" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Magui Show - Todos los derechos reservados</p>
+</footer>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
